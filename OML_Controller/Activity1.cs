@@ -17,8 +17,9 @@ namespace OML_Controller
         int count = 1;
         public string LogText;        
         public TCPClient TCPclient;
-        private MediaPlayer mp;
-        private string url; 
+ 
+        public Activity1()
+        {}
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -31,11 +32,19 @@ namespace OML_Controller
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            button.Click += new EventHandler(button_Click);
 
-            TCPclient = new TCPClient(this); 
+            //Tvp Server
+            //TCPclient = new TCPClient(this);           
         }
-            
+
+        void button_Click(object sender, EventArgs e)
+        {
+            Intent i = new Intent();
+            i.SetClass(this, typeof(video));
+            i.AddFlags(ActivityFlags.NewTask);
+            StartActivity(i);
+        }            
 
         public void OnSetText()
         {
