@@ -42,7 +42,8 @@ namespace OML_Controller
             try
             {
                 mediaPlayer.SetDisplay(holder);
-                mediaPlayer.SetDataSource("http://www.aspnetpodcast.com/VideoFiles/MonoForAndroid.mp4");
+                //mediaPlayer.SetDataSource("http://www.aspnetpodcast.com/VideoFiles/MonoForAndroid.mp4");
+                mediaPlayer.SetDataSource("http://141.252.221.71:1234");
 
                 mediaPlayer.Prepared += new EventHandler(mediaPlayerPrepared);
                 mediaPlayer.PrepareAsync();

@@ -54,6 +54,10 @@
     <Compile Include="Data\DataStructure.cs" />
     <Compile Include="Data\Sensor.cs" />
     <Compile Include="Data\ValueData.cs" />
+    <Compile Include="Front\SliderControls.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Start.cs" />
     <Compile Include="video.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,7 +71,9 @@
     <AndroidResource Include="Resources\Layout\Main.axml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <AndroidResource Include="Resources\Values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\Icon.png" />
@@ -77,6 +83,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\Drawable\backbutton.png" />
+    <AndroidResource Include="Resources\Drawable\background.png" />
+    <AndroidResource Include="Resources\Drawable\bottombox.png" />
+    <AndroidResource Include="Resources\Drawable\exitbutton.png" />
+    <AndroidResource Include="Resources\Drawable\infobutton.png" />
+    <AndroidResource Include="Resources\Drawable\interface02.png" />
+    <AndroidResource Include="Resources\Drawable\joybox.png" />
+    <AndroidResource Include="Resources\Drawable\joystick.png" />
+    <AndroidResource Include="Resources\Drawable\joystick_bg.png" />
+    <AndroidResource Include="Resources\Drawable\menubox.png" />
+    <AndroidResource Include="Resources\Drawable\menubox2.png" />
+    <AndroidResource Include="Resources\Drawable\minibutton.png" />
+    <AndroidResource Include="Resources\Drawable\minibuttonpressed.png" />
+    <AndroidResource Include="Resources\Drawable\nhl_logo.png" />
+    <AndroidResource Include="Resources\Drawable\settingsbutton.png" />
+    <AndroidResource Include="Resources\Drawable\sidebox.png" />
+    <AndroidResource Include="Resources\Drawable\sidebox2.png" />
+    <AndroidResource Include="Resources\Drawable\sliderbig.png" />
+    <AndroidResource Include="Resources\Drawable\slidersbox.png" />
+    <AndroidResource Include="Resources\Drawable\slidersbox2.png" />
+    <AndroidResource Include="Resources\Drawable\slidersmall.png" />
+    <AndroidResource Include="Resources\Drawable\startbutton.png" />
+    <AndroidResource Include="Resources\Layout\info.axml" />
+    <AndroidResource Include="Resources\Layout\setting.axml" />
+    <AndroidResource Include="Resources\Layout\start.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

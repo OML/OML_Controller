@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/But1"
-    />
-<TextView
-     android:id="@+id/TextLog"
-     android:layout_width="fill_parent"
-     android:layout_height="wrap_content"
-     android:text="@string/Hello" />
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="600dp"
+    android:background="@drawable/background"
+    android:padding="8dp">
+
+  <RelativeLayout
+      android:id="@+id/menuBoxMain"
+      android:layout_width="176dp"
+      android:layout_height="314dp"
+      android:background="@drawable/menubox"
+      android:paddingBottom="32dp"
+      android:paddingLeft="17dp"
+      android:paddingRight="17dp"
+      android:paddingTop="32dp" >
+
+    <Button
+		    android:id="@+id/startButton"
+		    android:layout_width="142dp"
+		    android:layout_height="55dp"
+		    android:background="@drawable/startbutton">
+    </Button>
+
+    <Button
+		    android:id="@+id/settingsButton"
+		    android:layout_width="142dp"
+		    android:layout_height="55dp"
+		    android:background="@drawable/settingsbutton"
+		    android:layout_below="@id/startButton"
+		    android:layout_marginTop="10dp">
+    </Button>
+
+    <Button
+		    android:id="@+id/infoButton"
+		    android:layout_width="142dp"
+		    android:layout_height="55dp"
+		    android:background="@drawable/infobutton"
+		    android:layout_below="@id/settingsButton"
+		    android:layout_marginTop="10dp">
+    </Button>
+
+    <Button
+		    android:id="@+id/exitButton"
+		    android:layout_width="142dp"
+		    android:layout_height="55dp"
+		    android:background="@drawable/exitbutton"
+		    android:layout_below="@id/infoButton"
+		    android:layout_marginTop="10dp">
+    </Button>
+  </RelativeLayout>
+</RelativeLayout>
