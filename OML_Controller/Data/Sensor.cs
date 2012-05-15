@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace OMLController.Data
+namespace OML_Controller.Data
 {
     class Sensor
     {

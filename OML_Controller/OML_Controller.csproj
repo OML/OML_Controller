@@ -54,12 +54,14 @@
     <Compile Include="Data\DataStructure.cs" />
     <Compile Include="Data\Sensor.cs" />
     <Compile Include="Data\ValueData.cs" />
+    <Compile Include="video.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Resources\AboutAssets.txt" />
+    <AndroidResource Include="Resources\Layout\videolayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\Main.axml" />
