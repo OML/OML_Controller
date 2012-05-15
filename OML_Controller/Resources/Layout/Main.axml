@@ -10,4 +10,9 @@
     android:layout_height="wrap_content" 
     android:text="@string/Hello"
     />
+<TextView
+     android:id="@+id/TextLog"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="@string/Hello" />
 </LinearLayout>
