@@ -54,6 +54,7 @@
     <Compile Include="Data\DataStructure.cs" />
     <Compile Include="Data\Sensor.cs" />
     <Compile Include="Data\ValueData.cs" />
+    <Compile Include="Front\GameControls.cs" />
     <Compile Include="Front\SliderControls.cs" />
     <Compile Include="Info.cs" />
     <Compile Include="Settings.cs" />
@@ -105,9 +106,13 @@
     <AndroidResource Include="Resources\Drawable\slidersbox2.png" />
     <AndroidResource Include="Resources\Drawable\slidersmall.png" />
     <AndroidResource Include="Resources\Drawable\startbutton.png" />
-    <AndroidResource Include="Resources\Layout\info.axml" />
+    <AndroidResource Include="Resources\Layout\info.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\Layout\setting.axml" />
-    <AndroidResource Include="Resources\Layout\start.axml" />
+    <AndroidResource Include="Resources\Layout\start.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

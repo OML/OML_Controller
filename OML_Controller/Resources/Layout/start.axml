@@ -48,9 +48,9 @@
 		        android:id="@+id/smallSlider0"
 		        android:layout_width="44dp"
 		        android:layout_height="205dp">
-	
-		        <oml.joystick.SliderControls
-		            android:id="@+id/sliderControls1"
+
+          <oml_controller.SliderControls
+              android:id="@+id/sliderControls1"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_alignParentLeft="true"
@@ -63,9 +63,9 @@
 		        android:layout_height="205dp"
 		        android:layout_toRightOf="@id/smallSlider0"
 		        android:layout_marginLeft="22dp">
-	
-		        <oml.joystick.SliderControls
-		            android:id="@+id/sliderControls2"
+
+          <oml_controller.SliderControls
+              android:id="@+id/sliderControls2"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_alignParentLeft="true"
@@ -78,9 +78,9 @@
 	        android:layout_width="112dp"
 	        android:layout_height="205dp"
 	        android:visibility="gone">
-	        
-	        <oml.joystick.SliderControls
-	            android:id="@+id/sliderControls3"
+
+        <oml_controller.SliderControls
+            android:id="@+id/sliderControls3"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_alignParentLeft="true"
@@ -130,7 +130,7 @@
 	    android:layout_marginTop="8dp"
 	    android:background="@drawable/joybox">
 
-		<oml.joystick.GameControls
+    <oml_controller.GameControls
 		    android:id="@+id/gameControls1"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
