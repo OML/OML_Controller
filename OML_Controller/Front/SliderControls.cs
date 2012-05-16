@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Graphics;
 
-namespace OML_Controller.Front
+namespace OML_Controller
 {
     public class SliderControls : View, View.IOnTouchListener
     {
@@ -36,6 +36,7 @@ namespace OML_Controller.Front
             base(context, attrs, defStyle)
         {
             Initialize();
+            this.SetOnTouchListener(this);
         }
 
         private void Initialize()
@@ -84,29 +85,34 @@ namespace OML_Controller.Front
 		    percentage = ((Math.Abs(_touchingPoint.Y - 179) / 179) * 100);
 	    }
 
-        public void onDraw(Canvas canvas)
+        protected override void OnDraw(Canvas canvas)
         {
-            //if (((View)this.GetParent()).getVisibility() == VISIBLE && ((View)this.getParent()).getId() != id.bigSlider)
-           //if (((View)this.GetParent()).getVisibility() == VISIBLE && ((View)this.getParent()).getId() != id.bigSlider)
-           //{
+            base.OnDraw(canvas);
+            if (!this.IsInEditMode)
+            {
+                //if (((View)this.GetParent()).getVisibility() == VISIBLE && ((View)this.getParent()).getId() != id.bigSlider)
+                //if (((View)this.GetParent()).getVisibility() == VISIBLE && ((View)this.getParent()).getId() != id.bigSlider)
+                //{
                 //draw the dragable slider(s)
-                //canvas.DrawBitmap(BitmapFactory.DecodeResource(Resource.Drawable.slidersmall, _touchingPoint.X, _touchingPoint.Y));
-            var paint = new Paint ();
-              paint.AntiAlias = true;
-              paint.Color = Color.Green;
-              paint.Alpha = 50;
+                //canvas.DrawBitmap(BitmapFactory.DecodeResource(Resource.Drawable.slidersmall, _touchingPoint.X, _touchingPoint.Y));            
+                canvas.DrawBitmap(BitmapFactory.DecodeResource(Resources, Resource.Drawable.slidersmall), _touchingPoint.X, _touchingPoint.Y, null);
+                //}
+                //else
+                //{
+                //    //draw the dragable slider
+                //    canvas.DrawBitmap(BitmapFactory.DecodeResource(Resource.Drawable.sliderbig, _touchingPoint.X, _touchingPoint.Y));
+                //}
+                //for debugging in edit mode
+            }
+            else
+            {
+                Paint innerCirclePaint = new Paint();
+                innerCirclePaint.SetARGB(255, 255, 255, 255);
+                innerCirclePaint.AntiAlias = true;
 
-              //Bitmap a = BitmapFactory.DecodeResource(Resource.Drawable.slidersmall, 2);
-
-              //canvas.DrawBitmap(_touchingPoint.X, _touchingPoint.X, paint);
-            
-           //}
-           //else
-           //{
-           //    //draw the dragable slider
-           //    canvas.DrawBitmap(BitmapFactory.DecodeResource(Resource.Drawable.sliderbig, _touchingPoint.X, _touchingPoint.Y));
-           //}
-           //for debugging in edit mode
+                innerCirclePaint.SetStyle(Paint.Style.Fill);
+                canvas.DrawLine(21, 0, 21, 205, innerCirclePaint);
+            }
         }
     }
 }
