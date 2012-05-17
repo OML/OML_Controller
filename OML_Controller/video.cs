@@ -71,6 +71,8 @@ namespace OML_Controller
             mediaPlayer.Release();
         }
 
-        public void SurfaceChanged(ISurfaceHolder holder, int i, int j, int k){}
+        public void SurfaceChanged(ISurfaceHolder holder, int i, int j, int k) { }
+
+        public void SurfaceChanged(ISurfaceHolder holder, Android.Graphics.Format f, int i, int j) { }
     }
 }

@@ -1,142 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/startLayout"
-    android:layout_width="1024dp" 
+    android:layout_width="1024dp"
     android:layout_height="527dp"
     android:padding="8dp"
     android:background="@drawable/background">
-
-    <!-- MenuBox layout, includes 4 buttons -->
-	<RelativeLayout
-	    android:id="@+id/menuBox"
-	    android:layout_width="176dp"
-	    android:layout_height="249dp"
-	    android:background="@drawable/menubox2"
-	    android:paddingLeft="17dp"
-	    android:paddingRight="17dp"
-	    android:paddingTop="32dp"
-	    android:paddingBottom="32dp">
-	    
-	    <Button
-	        android:id="@+id/sliderButton"
-		    android:layout_width="142dp"
-		    android:layout_height="55dp"
-		    android:background="@drawable/startbutton">
-	    </Button>
-	</RelativeLayout>
-		
-	<!-- SliderBox layout, contains sliders to control CARMEN -->
-	<RelativeLayout
-		android:id="@+id/slidersBox"
-	    android:layout_width="176dp"
-	    android:layout_height="262dp"
-	    android:background="@drawable/slidersbox2"
-	    android:layout_below="@id/menuBox"
-	    android:layout_marginTop="8dp"
-	    android:paddingTop="25dp"
-	    android:paddingLeft="34dp"
-	    android:paddingRight="32dp"
-	    android:paddingBottom="25dp">
-	        
+<!-- MenuBox layout, includes 4 buttons -->
+    <RelativeLayout
+        android:id="@+id/menuBox"
+        android:layout_width="176dp"
+        android:layout_height="249dp"
+        android:background="@drawable/menubox2"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp">
+        <Button
+            android:id="@+id/sliderButton"
+            android:layout_width="142dp"
+            android:layout_height="55dp"
+            android:background="@drawable/startbutton" />
+    </RelativeLayout>
+<!-- SliderBox layout, contains sliders to control CARMEN -->
+    <RelativeLayout
+        android:id="@+id/slidersBox"
+        android:layout_width="176dp"
+        android:layout_height="262dp"
+        android:background="@drawable/slidersbox2"
+        android:layout_below="@id/menuBox"
+        android:layout_marginTop="8dp"
+        android:paddingTop="25dp"
+        android:paddingLeft="34dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="25dp">
         <RelativeLayout
             android:id="@+id/smallSliderLayout"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:visibility="visible">
-            "
-		    <RelativeLayout
-		        android:id="@+id/smallSlider0"
-		        android:layout_width="44dp"
-		        android:layout_height="205dp">
-
-          <oml_controller.SliderControls
-              android:id="@+id/sliderControls1"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignParentLeft="true"
-		            android:layout_alignParentTop="true" />
-		    </RelativeLayout>
-		    
-		    <RelativeLayout
-		        android:id="@+id/smallSlider1"
-		        android:layout_width="44dp"
-		        android:layout_height="205dp"
-		        android:layout_toRightOf="@id/smallSlider0"
-		        android:layout_marginLeft="22dp">
-
-          <oml_controller.SliderControls
-              android:id="@+id/sliderControls2"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignParentLeft="true"
-		            android:layout_alignParentTop="true" />
-		    </RelativeLayout> 
-	    </RelativeLayout>
-		    
-	    <RelativeLayout
-	        android:id="@+id/bigSlider"
-	        android:layout_width="112dp"
-	        android:layout_height="205dp"
-	        android:visibility="gone">
-
-        <oml_controller.SliderControls
-            android:id="@+id/sliderControls3"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:layout_alignParentLeft="true"
-	            android:layout_alignParentTop="true" />
-	    </RelativeLayout>
-	</RelativeLayout>
-	
-	<!-- CameraBox layout, will show a live camera feed -->
-	<RelativeLayout
-	    android:id="@+id/cameraBox"
-	    android:layout_width="640dp"
-	    android:layout_height="414dp"
-	    android:layout_toRightOf="@id/menuBox"
-	    android:layout_marginLeft="8dp">
-	</RelativeLayout>
-	
-	<!-- BottomBox layout, will show data like speed etc -->
-	<RelativeLayout
-	    android:id="@+id/bottomBox"
-	    android:layout_width="640dp"
-	    android:layout_height="104dp"
-	    android:layout_below="@id/cameraBox"
-	    android:layout_toRightOf="@id/slidersBox"
-	    android:layout_marginTop="8dp"
-	    android:layout_marginLeft="8dp"
-	    android:background="@drawable/bottombox">  
-	</RelativeLayout>
-	
-	<!-- SideBox layout, will show specified data -->
-	<RelativeLayout
-	    android:id="@+id/sideBox"
-	    android:layout_width="176dp"
-	    android:layout_height="352dp"
-	    android:layout_toRightOf="@id/cameraBox"
-	    android:layout_marginLeft="8dp"
-	    android:background="@drawable/sidebox2">	    
-	</RelativeLayout>
-	
-	<!-- JoyBox layout, will handle joystick -->
-	<RelativeLayout 
-	    android:id="@+id/joyBox"
-	    android:layout_width="176dp"
-	    android:layout_height="159dp"
-	    android:layout_toRightOf="@id/bottomBox"
-	    android:layout_below="@id/sideBox"
-	    android:layout_marginLeft="8dp"
-	    android:layout_marginTop="8dp"
-	    android:background="@drawable/joybox">
-
-    <oml_controller.GameControls
-		    android:id="@+id/gameControls1"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_alignParentLeft="true"
-		    android:layout_alignParentTop="true" />
-
-	</RelativeLayout>
-	    
+            <RelativeLayout
+                android:id="@+id/smallSlider0"
+                android:layout_width="44dp"
+                android:layout_height="205dp">
+                <oml_controller.SliderControls
+                    android:id="@+id/sliderControls1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="85.0dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/smallSlider1"
+                android:layout_width="44dp"
+                android:layout_height="205dp"
+                android:layout_toRightOf="@id/smallSlider0"
+                android:layout_marginLeft="22dp">
+                <oml_controller.SliderControls
+                    android:id="@+id/sliderControls2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bigSlider"
+            android:layout_width="112dp"
+            android:layout_height="205dp"
+            android:visibility="gone">
+            <oml_controller.SliderControls
+                android:id="@+id/sliderControls3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+<!-- CameraBox layout, will show a live camera feed -->
+    <RelativeLayout
+        android:id="@+id/cameraBox"
+        android:layout_width="640dp"
+        android:layout_height="414dp"
+        android:layout_toRightOf="@id/menuBox"
+        android:layout_marginLeft="8dp" />
+<!-- BottomBox layout, will show data like speed etc -->
+    <RelativeLayout
+        android:id="@+id/bottomBox"
+        android:layout_width="640dp"
+        android:layout_height="104dp"
+        android:layout_below="@id/cameraBox"
+        android:layout_toRightOf="@id/slidersBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bottombox" />
+<!-- SideBox layout, will show specified data -->
+    <RelativeLayout
+        android:id="@+id/sideBox"
+        android:layout_width="176dp"
+        android:layout_height="352dp"
+        android:layout_toRightOf="@id/cameraBox"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/sidebox2" />
+<!-- JoyBox layout, will handle joystick -->
+    <RelativeLayout
+        android:id="@+id/joyBox"
+        android:layout_width="176dp"
+        android:layout_height="159dp"
+        android:layout_toRightOf="@id/bottomBox"
+        android:layout_below="@id/sideBox"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/joybox">
+        <oml_controller.GameControls
+            android:id="@+id/gameControls1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
 </RelativeLayout>
