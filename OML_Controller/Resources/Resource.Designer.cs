@@ -72,28 +72,25 @@ namespace OML_Controller
 			public const int nhl_logo = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int settingsbutton = 2130837519;
+			public const int sidebox = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int sidebox = 2130837520;
+			public const int sidebox2 = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int sidebox2 = 2130837521;
+			public const int sliderbig = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int sliderbig = 2130837522;
+			public const int slidersbox = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int slidersbox = 2130837523;
+			public const int slidersbox2 = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int slidersbox2 = 2130837524;
+			public const int slidersmall = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int slidersmall = 2130837525;
-			
-			// aapt resource value: 0x7f020016
-			public const int startbutton = 2130837526;
+			public const int startbutton = 2130837525;
 			
 			private Drawable()
 			{
@@ -103,89 +100,110 @@ namespace OML_Controller
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050008
-			public const int back_button1 = 2131034120;
+			// aapt resource value: 0x7f05000f
+			public const int back_button1 = 2131034127;
 			
-			// aapt resource value: 0x7f050012
-			public const int bigSlider = 2131034130;
+			// aapt resource value: 0x7f050019
+			public const int bigSlider = 2131034137;
 			
-			// aapt resource value: 0x7f050015
-			public const int bottomBox = 2131034133;
+			// aapt resource value: 0x7f05001c
+			public const int bottomBox = 2131034140;
 			
-			// aapt resource value: 0x7f05001a
-			public const int btnClose = 2131034138;
-			
-			// aapt resource value: 0x7f050014
-			public const int cameraBox = 2131034132;
-			
-			// aapt resource value: 0x7f050005
-			public const int exitButton = 2131034117;
-			
-			// aapt resource value: 0x7f050018
-			public const int gameControls1 = 2131034136;
+			// aapt resource value: 0x7f050021
+			public const int btnClose = 2131034145;
 			
 			// aapt resource value: 0x7f050004
-			public const int infoButton = 2131034116;
+			public const int button1 = 2131034116;
+			
+			// aapt resource value: 0x7f05001b
+			public const int cameraBox = 2131034139;
 			
 			// aapt resource value: 0x7f050006
-			public const int ip_adress = 2131034118;
+			public const int editText1 = 2131034118;
 			
-			// aapt resource value: 0x7f050017
-			public const int joyBox = 2131034135;
+			// aapt resource value: 0x7f050008
+			public const int editText2 = 2131034120;
+			
+			// aapt resource value: 0x7f05001f
+			public const int gameControls1 = 2131034143;
+			
+			// aapt resource value: 0x7f05000d
+			public const int ip_adress = 2131034125;
+			
+			// aapt resource value: 0x7f05001e
+			public const int joyBox = 2131034142;
 			
 			// aapt resource value: 0x7f05000a
-			public const int menuBox = 2131034122;
+			public const int liveButton = 2131034122;
 			
-			// aapt resource value: 0x7f050001
-			public const int menuBoxMain = 2131034113;
+			// aapt resource value: 0x7f050011
+			public const int menuBox = 2131034129;
+			
+			// aapt resource value: 0x7f050009
+			public const int menuBoxMain = 2131034121;
 			
 			// aapt resource value: 0x7f050000
 			public const int nhl_image = 2131034112;
 			
-			// aapt resource value: 0x7f050007
-			public const int port_adress = 2131034119;
-			
-			// aapt resource value: 0x7f050003
-			public const int settingsButton = 2131034115;
-			
-			// aapt resource value: 0x7f050016
-			public const int sideBox = 2131034134;
+			// aapt resource value: 0x7f05000e
+			public const int port_adress = 2131034126;
 			
 			// aapt resource value: 0x7f05000b
-			public const int sliderButton = 2131034123;
+			public const int recordedButton = 2131034123;
 			
-			// aapt resource value: 0x7f05000f
-			public const int sliderControls1 = 2131034127;
-			
-			// aapt resource value: 0x7f050011
-			public const int sliderControls2 = 2131034129;
-			
-			// aapt resource value: 0x7f050013
-			public const int sliderControls3 = 2131034131;
+			// aapt resource value: 0x7f050001
+			public const int relativeLayout1 = 2131034113;
 			
 			// aapt resource value: 0x7f05000c
-			public const int slidersBox = 2131034124;
+			public const int settingsButton = 2131034124;
 			
-			// aapt resource value: 0x7f05000e
-			public const int smallSlider0 = 2131034126;
+			// aapt resource value: 0x7f05001d
+			public const int sideBox = 2131034141;
+			
+			// aapt resource value: 0x7f050012
+			public const int sliderButton = 2131034130;
+			
+			// aapt resource value: 0x7f050016
+			public const int sliderControls1 = 2131034134;
+			
+			// aapt resource value: 0x7f050018
+			public const int sliderControls2 = 2131034136;
+			
+			// aapt resource value: 0x7f05001a
+			public const int sliderControls3 = 2131034138;
+			
+			// aapt resource value: 0x7f050013
+			public const int slidersBox = 2131034131;
+			
+			// aapt resource value: 0x7f050015
+			public const int smallSlider0 = 2131034133;
+			
+			// aapt resource value: 0x7f050017
+			public const int smallSlider1 = 2131034135;
+			
+			// aapt resource value: 0x7f050014
+			public const int smallSliderLayout = 2131034132;
+			
+			// aapt resource value: 0x7f050003
+			public const int spinner1 = 2131034115;
 			
 			// aapt resource value: 0x7f050010
-			public const int smallSlider1 = 2131034128;
+			public const int startLayout = 2131034128;
 			
-			// aapt resource value: 0x7f05000d
-			public const int smallSliderLayout = 2131034125;
+			// aapt resource value: 0x7f050022
+			public const int surface = 2131034146;
 			
 			// aapt resource value: 0x7f050002
-			public const int startButton = 2131034114;
+			public const int textView1 = 2131034114;
 			
-			// aapt resource value: 0x7f050009
-			public const int startLayout = 2131034121;
+			// aapt resource value: 0x7f050005
+			public const int textView2 = 2131034117;
 			
-			// aapt resource value: 0x7f05001b
-			public const int surface = 2131034139;
+			// aapt resource value: 0x7f050007
+			public const int textView3 = 2131034119;
 			
-			// aapt resource value: 0x7f050019
-			public const int widget46 = 2131034137;
+			// aapt resource value: 0x7f050020
+			public const int widget46 = 2131034144;
 			
 			private Id()
 			{
@@ -199,16 +217,19 @@ namespace OML_Controller
 			public const int info = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int Live = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int setting = 2130903042;
+			public const int Main = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int start = 2130903043;
+			public const int setting = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int videolayout = 2130903044;
+			public const int start = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int videolayout = 2130903045;
 			
 			private Layout()
 			{
