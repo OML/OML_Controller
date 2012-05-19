@@ -83,7 +83,9 @@
     <Folder Include="Assets\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\AndroidManifest.xml" />
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <AndroidResource Include="Resources\Drawable\backbutton.png" />
     <AndroidResource Include="Resources\Drawable\background.png" />
     <AndroidResource Include="Resources\Drawable\bottombox.png" />

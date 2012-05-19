@@ -56,8 +56,7 @@ namespace OML_Controller
 			    return;
 		
 		    else if(events == null && lastEvent != null)
-			    events = lastEvent;
-		
+			    events = lastEvent;		
 		    else
 			    lastEvent = events;
 		
@@ -91,12 +90,12 @@ namespace OML_Controller
             if (!this.IsInEditMode)
             {
                 //if (((View)this.GetParent()).getVisibility() == VISIBLE && ((View)this.getParent()).getId() != id.bigSlider)
-                //if (((View)this.GetParent()).getVisibility() == VISIBLE && ((View)this.getParent()).getId() != id.bigSlider)
-                //{
+                if (this.Visibility == ViewStates.Visible)
+                {
                 //draw the dragable slider(s)
                 //canvas.DrawBitmap(BitmapFactory.DecodeResource(Resource.Drawable.slidersmall, _touchingPoint.X, _touchingPoint.Y));            
-                canvas.DrawBitmap(BitmapFactory.DecodeResource(Resources, Resource.Drawable.slidersmall), _touchingPoint.X, _touchingPoint.Y, null);
-                //}
+                    canvas.DrawBitmap(BitmapFactory.DecodeResource(Resources, Resource.Drawable.slidersmall), _touchingPoint.X, _touchingPoint.Y, null);
+                }
                 //else
                 //{
                 //    //draw the dragable slider
