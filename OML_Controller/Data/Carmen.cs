@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace OML_Controller.Data
 {
-    class DataStructure
+    class Carmen
     {
         /* @author Daniel de Valk
          * Date 15-5-2012
@@ -71,13 +71,7 @@ namespace OML_Controller.Data
         public Sensor Helling;
         public Sensor SteerDirection;
 
-        public DataStructure()
-        {
-            CreateSensors();
-        }
-
-        //Create Sensors
-        private void CreateSensors()
+        public Carmen()
         {
             Eng1_Temp = new Sensor("Engine 1 Temp", "Eng1_Temp", "C", 0, 110);
             Eng2_Temp = new Sensor("Engine 2 Temp", "Eng2_Temp", "C", 0, 110);
@@ -103,6 +97,5 @@ namespace OML_Controller.Data
             Helling = new Sensor("Helling", "Helling", "°", -1800, 1800);
             SteerDirection = new Sensor("Steering Direction", "SteerDirection", "°", 0, 360);
         }
-
     }
 }

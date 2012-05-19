@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1">
+        <TextView
+            android:text="Select Car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:textSize="30px" />
+        <Spinner
+            android:layout_width="411.0dp"
+            android:layout_height="71.0dp"
+            android:layout_below="@id/textView1"
+            android:id="@+id/spinner1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="150.0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:id="@+id/button1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/connectbutton" />
+        <TextView
+            android:text="IP Address:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="25.0dp"
+            android:layout_marginTop="75.0dp"
+            android:textSize="20px"
+            android:enabled="true"
+            android:visibility="invisible" />
+        <EditText
+            android:layout_width="301.0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView2"
+            android:id="@+id/editText1"
+            android:layout_marginTop="212.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:enabled="true"
+            android:visibility="invisible" />
+        <TextView
+            android:text="Port:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:id="@+id/textView3"
+            android:layout_marginTop="30.0dp"
+            android:layout_marginLeft="26.0dp"
+            android:textSize="20px"
+            android:enabled="true"
+            android:visibility="invisible" />
+        <EditText
+            android:inputType="textPostalAddress"
+            android:layout_width="300.0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView3"
+            android:id="@+id/editText2"
+            android:layout_below="@id/editText1"
+            android:layout_marginLeft="68.0dp"
+            android:enabled="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

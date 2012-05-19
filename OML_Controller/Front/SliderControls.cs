@@ -30,6 +30,7 @@ namespace OML_Controller
             base(context, attrs)
         {
             Initialize();
+            this.SetOnTouchListener(this);
         }
 
         public SliderControls(Context context, IAttributeSet attrs, int defStyle) :

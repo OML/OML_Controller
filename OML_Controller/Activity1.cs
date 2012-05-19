@@ -30,41 +30,26 @@ namespace OML_Controller
              /**
              * Create start
              */
-            Button btnOpenNewActivity1 = FindViewById<Button>(Resource.Id.startButton);
-            btnOpenNewActivity1.Click += new EventHandler(StartClick);
+            Button btnOpenNewActivity1 = FindViewById<Button>(Resource.Id.liveButton);
+            btnOpenNewActivity1.Click += new EventHandler(LiveClick);
 
             /**
             * Create info sometimes
             */
-            Button btnOpenNewActivity = FindViewById<Button>(Resource.Id.infoButton);
-            btnOpenNewActivity.Click += new EventHandler(InfoClick);
+            Button btnOpenNewActivity = FindViewById<Button>(Resource.Id.recordedButton);
+            btnOpenNewActivity.Click += new EventHandler(RecordedClick);
  
             /**
              * Create settings
              */
             Button btnOpenNewActivity2 = FindViewById<Button>(Resource.Id.settingsButton);
             btnOpenNewActivity2.Click += new EventHandler(SettingsClick);
-    
-            /**
-             * Exit
-             */
-            Button btnOpenNewActivity3 = FindViewById<Button>(Resource.Id.exitButton);
-            btnOpenNewActivity3.Click += new EventHandler(ExitClick);
-
 
             //TCP Server
             //TCPclient = new TCPClient(this);           
         }
 
-        void button_Click(object sender, EventArgs e)
-        {
-            Intent i = new Intent();
-            i.SetClass(this, typeof(video));
-            i.AddFlags(ActivityFlags.NewTask);
-            StartActivity(i);
-        }
-
-        void StartClick(object sender, EventArgs e)
+        void LiveClick(object sender, EventArgs e)
         {
             Intent i = new Intent();
             i.SetClass(this, typeof(Start));
@@ -72,7 +57,7 @@ namespace OML_Controller
             StartActivity(i);
         }
 
-        void InfoClick(object sender, EventArgs e)
+        void RecordedClick(object sender, EventArgs e)
         {
             Intent i = new Intent();
             i.SetClass(this, typeof(Info));
@@ -88,10 +73,13 @@ namespace OML_Controller
             StartActivity(i);
         }
 
-        void ExitClick(object sender, EventArgs e)
-        {
-            
-        }  
+        //void button_Click(object sender, EventArgs e)
+        //{
+        //    Intent i = new Intent();
+        //    i.SetClass(this, typeof(video));
+        //    i.AddFlags(ActivityFlags.NewTask);
+        //    StartActivity(i);
+        //}
 
         public void OnSetText()
         {

@@ -42,8 +42,13 @@
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -51,12 +56,14 @@
     <Compile Include="Activity1.cs" />
     <Compile Include="Connection\Data.cs" />
     <Compile Include="Connection\TCPClient.cs" />
-    <Compile Include="Data\DataStructure.cs" />
+    <Compile Include="Data\Carmen.cs" />
     <Compile Include="Data\Sensor.cs" />
+    <Compile Include="Data\Session.cs" />
     <Compile Include="Data\ValueData.cs" />
     <Compile Include="Front\GameControls.cs" />
     <Compile Include="Front\SliderControls.cs" />
     <Compile Include="Info.cs" />
+    <Compile Include="Live.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="video.cs" />
@@ -67,6 +74,12 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Resources\AboutAssets.txt" />
     <AndroidResource Include="Resources\Layout\videolayout.axml" />
+    <AndroidResource Include="Resources\Layout\start.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\Live.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\Main.axml" />
@@ -98,7 +111,6 @@
     <AndroidResource Include="Resources\Drawable\minibutton.png" />
     <AndroidResource Include="Resources\Drawable\minibuttonpressed.png" />
     <AndroidResource Include="Resources\Drawable\nhl_logo.png" />
-    <AndroidResource Include="Resources\Drawable\settingsbutton.png" />
     <AndroidResource Include="Resources\Drawable\sidebox.png" />
     <AndroidResource Include="Resources\Drawable\sidebox2.png" />
     <AndroidResource Include="Resources\Drawable\sliderbig.png" />
@@ -110,9 +122,11 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\Layout\setting.axml" />
-    <AndroidResource Include="Resources\Layout\start.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\connectbutton.png" />
+    <AndroidResource Include="Resources\Drawable\livebutton.png" />
+    <AndroidResource Include="Resources\Drawable\recordedbutton.png" />
+    <AndroidResource Include="Resources\Drawable\replaybutton.png" />
+    <AndroidResource Include="Resources\Drawable\settingsbutton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

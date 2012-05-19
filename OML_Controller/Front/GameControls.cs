@@ -33,12 +33,14 @@ namespace OML_Controller
             base(context, attrs)
         {
             Initialize();
+            this.SetOnTouchListener(this);
         }
 
         public GameControls(Context context, IAttributeSet attrs, int defStyle) :
             base(context, attrs, defStyle)
         {
             Initialize();
+            this.SetOnTouchListener(this);
         }
 
         private void Initialize()
