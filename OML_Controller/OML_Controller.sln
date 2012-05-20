@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OML_Controller", "OML_Controller.csproj", "{75F58A88-C030-4806-844B-C12CC3AD398B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OML_Controller_2", "..\OML_Controller_2\OML_Controller_2.csproj", "{AE6C3CD5-272F-41CA-A046-F89731FAB022}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{75F58A88-C030-4806-844B-C12CC3AD398B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75F58A88-C030-4806-844B-C12CC3AD398B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75F58A88-C030-4806-844B-C12CC3AD398B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{75F58A88-C030-4806-844B-C12CC3AD398B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75F58A88-C030-4806-844B-C12CC3AD398B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75F58A88-C030-4806-844B-C12CC3AD398B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AE6C3CD5-272F-41CA-A046-F89731FAB022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6C3CD5-272F-41CA-A046-F89731FAB022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6C3CD5-272F-41CA-A046-F89731FAB022}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AE6C3CD5-272F-41CA-A046-F89731FAB022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6C3CD5-272F-41CA-A046-F89731FAB022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6C3CD5-272F-41CA-A046-F89731FAB022}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
